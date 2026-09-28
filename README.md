@@ -1,16 +1,54 @@
-# React + Vite
+# AlgoPlayground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive visualizer for sorting algorithms — watch them execute step by step instead of only reading the code. Built with React, Vite, and Tailwind CSS. Fourth portfolio project.
 
-Currently, two official plugins are available:
+## Current Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Random array generation, displayed as vertical bars
+- Adjustable array size (10–100 elements)
+- Speed control (used once algorithms are added)
+- Responsive layout — controls stack on narrow screens
 
-## React Compiler
+## Coming Next
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Bubble Sort** — step-by-step visualization with comparison and swap highlighting
+- **Selection Sort** and **Insertion Sort**
+- Start / pause / reset playback controls
+- Algorithm info: time and space complexity, plain-language explanation
+- Optional: Merge Sort and Quick Sort, to show O(n²) vs O(n log n) visually
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+
+## Project Structure
+
+```
+src/
+  components/    BarVisualizer, ControlPanel
+  hooks/         useArray.js — array generation, size and speed state
+  App.jsx        page layout
+  main.jsx       React entry point
+```
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Roadmap
+
+- ✅ **Phase 0 — Planning:** project setup with React, Vite, Tailwind
+- ✅ **Phase 1 — Basic Visualizer:** random array, bars, size and speed controls, responsive layout
+- **Phase 2 — Bubble Sort**
+- **Phase 3 — Selection Sort**
+- **Phase 4 — Insertion Sort**
+- **Phase 5 — Optional:** Merge Sort, Quick Sort
+- **Phase 6 — Polish:** animations, info cards, accessibility
+- **Phase 7 — Portfolio:** screenshots, deployment, live demo
+
+Scope is intentionally focused: a polished sorting visualizer first. Graph algorithms and data structures come only after that is complete.
